@@ -1,7 +1,7 @@
 ﻿#nullable disable
 using Microsoft.EntityFrameworkCore;
 
-var dbContext = new ApplicationDbContext();
+using var dbContext = new ApplicationDbContext();
 
 await dbContext.Database.MigrateAsync();
 
