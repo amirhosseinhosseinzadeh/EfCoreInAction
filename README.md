@@ -1,4 +1,4 @@
-The modeling steps which ef core will use is at the first time that SomeDbContext being initilaize it reads all the models registred as `DbSet<T>` insinde that dbcontext
+The modeling steps which ef core will use is at the first time that SomeDbContext being initilaize it reads all the models registred as `DbSet<T>` inside that dbcontext
 After that the models are `cached` ,so subsequent instances are created faster.
 
 * EfCore looks through the `dbcontext` so finds all public `DbSet<T>` and define an initial name for tables
