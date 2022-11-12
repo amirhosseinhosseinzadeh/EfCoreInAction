@@ -13,7 +13,6 @@ EfCore creates internal model from the registered classes through the applicatio
 problems could apears if a mismatch  exists between dataabase and model.
 
 Here is a sample reading data from dbcontext:
-<details><summary>Collapse</summary>
 ```
 public static void ListAll()
 {
@@ -23,4 +22,3 @@ public static void ListAll()
 	records.ForEach(x => Console.WriteLine(x.Name));
 }
 ```
-</details>
